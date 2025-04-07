@@ -1,0 +1,123 @@
+[
+    {
+      "city": "New York",
+      "description": "An amazing journey",
+      "price": 720,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5j_pPpVqYqDly9vAiJmOxXFKJsw4sz0iCA&s"
+    },
+    {
+      "city": "Paris",
+      "description": "A romantic escape",
+      "price": 600,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIhmhSMBC44mycWicjO6jHLghQWEmzksW4Q&s"
+    },
+    {
+      "city": "London",
+      "description": "Landscape adventure",
+      "price": 350,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0waMy85NuFhRfYMiihlds6D6LufKeetE62w&s"
+    },
+    {
+      "city": "Columbia",
+      "description": "Amazing streets",
+      "price": 340,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWibsKq0APDcVZMzY-kHuM30_Bsgz7vINVg&s"
+    },
+    {
+      "city": "Delhi",
+      "description": "Cultural beauty",
+      "price": 545,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoKnwLBpgBeoIFmvlINR0ztKWKtDbqtYCGtSVB5BuRxkjJemjqMlg69S6_KNzHXvgoFGU&usqp=CAU"
+    },
+    {
+      "city": "Canada",
+      "description": "Bright skies",
+      "price": 860,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5kA57dhZkk65di7Es1wpk2Kq0Vp07osxLw&s"
+    },
+    {
+      "city": "Sweden",
+      "description": "An icy adventure",
+      "price": 350,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGwf7phsjyVEBFC-AlQUdBlQZRnG8Ral5BCg&s"
+    },
+    {
+      "city": "Denmark",
+      "description": "Challenging adventure",
+      "price": 700,
+      "image": "https://media.istockphoto.com/id/503874284/photo/berlin-skyline-with-spree-river-at-sunset-germany.jpg?s=612x612&w=0&k=20&c=gnrw-SQQq9Niao93SU4djAgGXi-5LRBNkSRiwwX96Tk="
+    },
+    {
+      "city": "San Francisco",
+      "description": "Golden city vibes",
+      "price": 680,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHD1urcv5nqtmPK3QuBKQoVWtjkWedSsttbQ&s"
+    },
+    {
+      "city": "Tokyo",
+      "description": "Neon dreams",
+      "price": 900,
+      "image": "https://imageio.forbes.com/specials-images/imageserve/66a287879f9e730526b6f792/Tokyo-city-in-Japan/960x0.jpg?format=jpg&width=960"
+    },
+    {
+      "city": "Bali",
+      "description": "Tropical paradise",
+      "price": 450,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRQHY9wJRxI7fMTTydWRLXHmnNbNPanylcQ&s"
+    },
+    {
+      "city": "Sydney",
+      "description": "Opera and beaches",
+      "price": 780,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-y7WetBLPTeeeTeQxltsZgl0ntJrLKtzr2O4q_W5xkqyKH9yxx05Pkfro3TRPlBVDws&usqp=CAU"
+    },
+    {
+      "city": "Rome",
+      "description": "Ancient wonders",
+      "price": 520,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWyq_eKnfHFkKRUUDfUE5AVSS-kYfHAg1Tg&s"
+    },
+    {
+      "city": "Barcelona",
+      "description": "Vibrant nightlife",
+      "price": 620,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYj1y7YwG782qTU4sTaXKg0Qua_OhWBtnKGRiQpr-IK_7QACCCSjOLu694xAuvjCrscQ&usqp=CAU"
+    },
+    {
+      "city": "Dubai",
+      "description": "Luxury and skyscrapers",
+      "price": 1100,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSolYBgDYxwcjbDUKZsUZqjRCrhbmorSjiPaQ&s"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "description": "Carnival vibes",
+      "price": 580,
+      "image": "https://www.costacruises.eu/content/dam/costa/inventory-assets/ports/RIO/c035_rio_de_janeiro.jpg"
+    },
+    {
+      "city": "Amsterdam",
+      "description": "Canals and culture",
+      "price": 490,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2RhmgUVKLwLZG5OwEPxD_XJtVGXEbd9fjQ&s"
+    },
+    {
+      "city": "Singapore",
+      "description": "Futuristic beauty",
+      "price": 850,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlkL1BLfbhvk9DF1tgAEd_5-9EOittFi4oAg&s"
+    },
+    {
+      "city": "Cairo",
+      "description": "Pyramids of wonder",
+      "price": 600,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWg0THFcvVBJ6rIYv33oZS_fc2qUaeQm4ag&s"
+    },
+    {
+      "city": "Istanbul",
+      "description": "East meets West",
+      "price": 530,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdmCIQREmluMzzDquptxU8idUiLmFDJ-Byg&s"
+    }
+  ]
+  

@@ -1,0 +1,21 @@
+[
+    {
+      "id": "top10",
+      "title": "The top 10 most visited famous cities in the world",
+      "subtitle": "Get the unbeatable experience visiting the best and most visited cities of the world.",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&w=600&h=300"
+    },
+    {
+      "id": "wonders",
+      "title": "Explore the seven wonders of the world",
+      "subtitle": "Discover the most magnificent structures and sights of the world.",
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&w=600&h=300"
+    },
+    {
+      "id": "covid",
+      "title": "World's top destinations during and post covid timeline",
+      "subtitle": "The best traveling places where your soul feels the divine pleasure.",
+      "image": "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&w=600&h=300"
+    }
+  ]
+  

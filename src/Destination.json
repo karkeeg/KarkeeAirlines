@@ -1,0 +1,26 @@
+[
+    {
+        "id": "sweden",
+        "name": "Sweden",
+        "properties": 773,
+        "image": "https://images.unsplash.com/photo-1609856878074-cf31e21ccb6b?auto=format&w=500&h=300"
+      },
+      {
+        "id": "germany",
+        "name": "Germany",
+        "properties": 233,
+        "image": "https://images.unsplash.com/photo-1534313314376-a72289b6181e?auto=format&w=500&h=300"
+      },
+      {
+        "id": "california1",
+        "name": "California",
+        "properties": 890,
+        "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&w=500&h=300"
+      },
+      {
+        "id": "california2",
+        "name": "California",
+        "properties": 890,
+        "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&w=500&h=300"
+      }
+    ]

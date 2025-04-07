@@ -1,0 +1,108 @@
+ [
+      {
+        "name": "The Royal Hotel Japan",
+        "price": "¥20000",
+        "image": "https://images.unsplash.com/photo-1496113517021-6a8cf280c2b7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "The Sanghai Hotel",
+        "price": "¥70000",
+        "image": "https://images.unsplash.com/photo-1661003624157-6f9c6f82032a?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  },
+      
+      {
+        "name": "Burj Al Arab",
+        "price": "¥90,444",
+        "image": "https://images.unsplash.com/photo-1465414951857-102134ffaa57?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "The Ritz-Carlton",
+        "price": "¥90,450",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+      },
+      {
+        "name": "The Royal Room",
+        "price": "₹345677",
+        "image": "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "The Plaza Hotel",
+        "price": "¥607,000",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+      },
+      {
+        "name": "Marina Bay Sands",
+        "price": "฿10,765",
+        "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "The Peninsula",
+        "price": "₹90,000",
+        "image": "https://plus.unsplash.com/premium_photo-1675745329378-5573c360f69f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Waldorf Astoria",
+        "price": "¥100,000",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Taj Lake Palace",
+        "price": "₹200,000",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+      },
+      {
+        "name": "The Biltmore Hotel",
+        "price": "₹150,000",
+        "image": "https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Four Seasons",
+        "price": "₹120,000",
+        "image": "https://images.unsplash.com/photo-1732347210962-c37cb67aabb2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Mandarin Oriental",
+        "price": "₹130,000",
+        "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Shangri-La Hotel",
+        "price": "₹140,000",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+      },
+      {
+        "name": "The Oberoi",
+        "price": "₹125,000",
+        "image": "https://images.unsplash.com/photo-1625244695851-1fc873f942bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Hilton Hotel",
+        "price": "₹110,000",
+        "image": "https://plus.unsplash.com/premium_photo-1677626376813-1ea652d15288?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "St. Regis",
+        "price": "₹135,000",
+        "image": "https://images.unsplash.com/photo-1454388683759-ee76c15fee26?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Hyatt Regency",
+        "price": "₹145,000",
+        "image": "https://images.unsplash.com/photo-1596436889106-be35e843f974"
+      },
+      {
+        "name": "InterContinental",
+        "price": "₹155,000",
+        "image": "https://images.unsplash.com/photo-1590447158019-883d8d5f8bc7?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Hotel Mumbai",
+        "price": "₹90,220",
+        "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "Hotel Thailand",
+        "price": "฿223340",
+        "image": "https://images.unsplash.com/photo-1600702661712-007433807bc4?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+    
