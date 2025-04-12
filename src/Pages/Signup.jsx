@@ -15,30 +15,75 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  
-  const navigate = useNavigate(); // To navigate to the main page after signup
+  const [termsAccepted, setTermsAccepted] = useState(false);
+
+  const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
   const images = [image1, image2, image3];
 
+  const validateForm = () => {
+    const errors = {};
+
+    // First Name and Last Name Validation
+    if (!firstName) errors.firstName = "First Name is required.";
+    if (!lastName) errors.lastName = "Last Name is required.";
+
+    // Email Validation
+    if (!email) {
+      errors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Please enter a valid email address.";
+    }
+
+    // Phone Validation (simple regex for phone number)
+    if (!phone) {
+      errors.phone = "Phone number is required.";
+    } else if (!/^\d{10}$/.test(phone)) {
+      errors.phone = "Please enter a valid 10-digit phone number.";
+    }
+
+    // Password Validation
+    if (!password) {
+      errors.password = "Password is required.";
+    }
+
+    // Confirm Password Validation
+    if (password !== confirmPassword) {
+      errors.confirmPassword = "Passwords do not match.";
+    }
+
+    // Terms and Conditions Validation
+    if (!termsAccepted) {
+      errors.termsAccepted = "You must agree to the terms and conditions.";
+    }
+
+    return errors;
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Show SweetAlert before proceeding
-    Swal.fire({
-      title: "Let's get started!",
-      text: "Are you ready to create your account and proceed to the main page?",
-      icon: "info",
-      showCancelButton: true,
-      confirmButtonText: "Yes, let's go!",
-      cancelButtonText: "Cancel",
-      reverseButtons: true,
-    }).then((result) => {
-      if (result.isConfirmed) {
-       
-       localStorage.setItem("loginAuth",JSON.stringify(true))
 
-        navigate("/");
-      }
-    });
+    // Validate the form
+    const formErrors = validateForm();
+    setErrors(formErrors);
+
+    if (Object.keys(formErrors).length === 0) {
+      Swal.fire({
+        title: "Let's get started!",
+        text: "Are you ready to create your account and proceed to the main page?",
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonText: "Yes, let's go!",
+        cancelButtonText: "Cancel",
+        reverseButtons: true,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          localStorage.setItem("loginAuth", JSON.stringify(true));
+          navigate("/");
+        }
+      });
+    }
   };
 
   return (
@@ -76,6 +121,7 @@ const Signup = () => {
                   onChange={(e) => setFirstName(e.target.value)}
                 />
                 <label htmlFor="firstName" className="ms-2">First Name</label>
+                {errors.firstName && <div className="text-danger">{errors.firstName}</div>}
               </div>
               <div className="col-md-6 form-floating">
                 <input
@@ -87,6 +133,7 @@ const Signup = () => {
                   onChange={(e) => setLastName(e.target.value)}
                 />
                 <label htmlFor="lastName" className="ms-2">Last Name</label>
+                {errors.lastName && <div className="text-danger">{errors.lastName}</div>}
               </div>
             </div>
 
@@ -101,6 +148,7 @@ const Signup = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <label htmlFor="email" className="ms-2">Email</label>
+                {errors.email && <div className="text-danger">{errors.email}</div>}
               </div>
               <div className="col-md-6 form-floating">
                 <input
@@ -112,10 +160,11 @@ const Signup = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
                 <label htmlFor="phone" className="ms-2">Phone Number</label>
+                {errors.phone && <div className="text-danger">{errors.phone}</div>}
               </div>
             </div>
 
-            <div className="mb-3 form-floating input-group">
+            <div className="mb-2 form-floating input-group">
               <input
                 type={showPassword ? "text" : "password"}
                 className="form-control"
@@ -133,8 +182,9 @@ const Signup = () => {
                 {showPassword ? "Hide" : "Show"}
               </button>
             </div>
+              {errors.password && <div className="text-danger mb-2">{errors.password}</div>}
 
-            <div className="mb-3 form-floating input-group">
+            <div className="mb-2 form-floating input-group">
               <input
                 type={showConfirmPassword ? "text" : "password"}
                 className="form-control"
@@ -152,6 +202,7 @@ const Signup = () => {
                 {showConfirmPassword ? "Hide" : "Show"}
               </button>
             </div>
+              {errors.confirmPassword && <div className="text-danger mb-2">{errors.confirmPassword}</div>}
 
             <div className="mb-3">
               <div className="form-check">
@@ -159,6 +210,8 @@ const Signup = () => {
                   className="form-check-input"
                   type="checkbox"
                   id="terms-checkbox"
+                  checked={termsAccepted}
+                  onChange={() => setTermsAccepted(!termsAccepted)}
                 />
                 <label className="form-check-label small" htmlFor="terms-checkbox">
                   I agree to all the{" "}
@@ -171,6 +224,7 @@ const Signup = () => {
                   </a>
                 </label>
               </div>
+              {errors.termsAccepted && <div className="text-danger">{errors.termsAccepted}</div>}
             </div>
 
             <button type="submit" className="btn btn-primary w-100 py-2">

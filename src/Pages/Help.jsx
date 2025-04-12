@@ -12,9 +12,10 @@ const Help = () => {
               
               <div className="position-relative">
                 <img 
-                  src="https://wallpapers.com/images/hd/help-pictures-1920-x-826-hjob55sjmkog6tko.jpg" 
+                  src="https://images.unsplash.com/photo-1620841713108-18ad2b52d15c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                   alt="Human and robot handshake" 
                   className="img-fluid rounded mb-4"
+                  style={{height:"500px",width:"100%"}}
                 />
                 
                 <div className="position-absolute bottom-0 start-0 p-5">

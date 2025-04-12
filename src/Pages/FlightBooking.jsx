@@ -1,5 +1,6 @@
 import React from "react";
 import flightsData from "../Flights.json";
+import { Link } from "react-router-dom";
 
 const FlightBooking = () => {
   return (
@@ -42,6 +43,7 @@ const FlightBooking = () => {
                   </div>
 
                   {/* Button */}
+                  <Link to={'/flights'} >
                   <button
                     className="py-2"
                     style={{
@@ -50,9 +52,10 @@ const FlightBooking = () => {
                       width: "100%",
                       borderRadius:"5px"
                     }}
-                  >
+                    >
                     Book Flight
                   </button>
+                    </Link>
                 </div>
               </div>
             </div>

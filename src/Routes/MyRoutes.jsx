@@ -13,6 +13,8 @@ import FlightBooking from '../Pages/FlightBooking'
 import TravelApp from '../Pages/TravelApp'
 import Hotel from '../Pages/Hotel'
 import Profile from '../Pages/Profile'
+import TravelStories from '../Pages/TravelStories'
+import FlightResults from '../Pages/FlightResults'
 
 const MyRoutes = () => {
   return (
@@ -27,10 +29,12 @@ const MyRoutes = () => {
     <Route path='/flight' element={<FlightBooking/>}/>
     <Route path='/hotel' element={<Hotel/>}/>
     <Route path='/profile' element={<Profile/>}/>
+    <Route path='/stories' element={<TravelStories/>}/>
     
   
     
     </Route>
+    <Route path='/flights' element={<FlightResults/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/signup' element={<Signup/>}/>
 </Routes>

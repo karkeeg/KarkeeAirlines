@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { FaUpload } from 'react-icons/fa';
+import { FaUpload, FaPlaneDeparture, FaHotel } from 'react-icons/fa';
+import { BiChevronRight } from 'react-icons/bi';
 
 const Profile = ({ user }) => {
   const [activeTab, setActiveTab] = useState('account');
+  const [historyTab, setHistoryTab] = useState('flights');
 
   const defaultUser = {
     name: 'Bibek karki',
@@ -19,7 +21,6 @@ const Profile = ({ user }) => {
   const renderAccountTab = () => (
     <div className="mt-4">
       <h2 className="fw-bold fs-4 mb-4">Account</h2>
-
       {[
         { label: 'Name', value: userData.name },
         { label: 'Email', value: userData.email, extra: (
@@ -39,9 +40,7 @@ const Profile = ({ user }) => {
           </div>
           <div className="d-flex align-items-center">
             {field.extra}
-            <button className="btn btn-outline-secondary btn-sm">
-              Change
-            </button>
+            <button className="btn btn-outline-secondary btn-sm">Change</button>
           </div>
         </div>
       ))}
@@ -50,22 +49,114 @@ const Profile = ({ user }) => {
 
   const renderHistoryTab = () => (
     <div className="mt-4">
-      <h2 className="fw-bold fs-4 mb-4">History</h2>
-      <p></p>
+      <h2 className="fw-bold fs-4 mb-4">Tickets/Bookings</h2>
+
+      {/* Flights / Stays Tabs */}
+      <div className="d-flex w-100 mb-3 border-bottom">
+  <button
+    className={`flex-grow-1 btn btn-link text-decoration-none text-center ${
+      historyTab === 'flights'
+        ? 'text-dark border-bottom border-2 fw-bold'
+        : 'text-muted'
+    }`}
+    onClick={() => setHistoryTab('flights')}
+  >
+    <FaPlaneDeparture className="me-1" /> Flights
+  </button>
+  <button
+    className={`flex-grow-1 btn btn-link text-decoration-none text-center ${
+      historyTab === 'stays'
+        ? 'text-dark border-bottom border-2 fw-bold'
+        : 'text-muted'
+    }`}
+    onClick={() => setHistoryTab('stays')}
+  >
+    <FaHotel className="me-1" /> Stays
+  </button>
+</div>
+
+
+      {/* Flights Content */}
+      {historyTab === 'flights' && (
+        <>
+          {[1, 2, 3].map((_, idx) => (
+            <div key={idx} className="d-flex justify-content-between align-items-center border rounded p-3 mb-3 shadow-sm bg-white flex-wrap">
+              <div className="d-flex align-items-center mb-2 mb-md-0">
+                <img src="https://logos-world.net/wp-content/uploads/2020/03/Emirates-Logo-1999.jpg" alt="Airline" style={{ width: 60 }} className="me-3" />
+                <div>
+                  <p className="mb-1 fw-semibold">Newark(EWR) ➝ Newark(EWR)</p>
+                  <p className="mb-1 text-muted small">Flight time</p>
+                  <p className="mb-0">12:00 pm - 6:00 pm</p>
+                </div>
+              </div>
+              <div className="text-center mb-2 mb-md-0">
+                <p className="mb-1 text-muted small">Date</p>
+                <p className="mb-0">12/12</p>
+              </div>
+              <div className="text-center mb-2 mb-md-0">
+                <p className="mb-1 text-muted small">Gate</p>
+                <p className="mb-0">A12</p>
+              </div>
+              <div className="text-center mb-2 mb-md-0">
+                <p className="mb-1 text-muted small">Seat</p>
+                <p className="mb-0">126</p>
+              </div>
+              <div className="d-flex align-items-center">
+                <button className="btn btn-primary me-2">Download Ticket</button>
+                <button className="btn btn-outline-secondary">
+                  <BiChevronRight />
+                </button>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
+
+      {/* Stays Content */}
+      {historyTab === 'stays' && (
+        <>
+          {[1, 2].map((_, idx) => (
+            <div key={idx} className="d-flex justify-content-between align-items-center border rounded p-3 mb-3 shadow-sm bg-white flex-wrap">
+              <div className="d-flex align-items-center mb-2 mb-md-0">
+                <img src="https://www.grandhotelsitea.it/wp-content/uploads/2024/07/Modello_Gif_ROYAL-1.png" alt="Hotel" style={{ width: 60 , height: 60 }} className="me-3" />
+                <div>
+                  <p className="mb-1 fw-semibold">Grand Palace Hotel</p>
+                  <p className="mb-1 text-muted small">Check-in: 14/12 • Check-out: 18/12</p>
+                  <p className="mb-0">Room: Deluxe Suite</p>
+                </div>
+              </div>
+              <div className="text-center mb-2 mb-md-0">
+                <p className="mb-1 text-muted small">Guests</p>
+                <p className="mb-0">2 Adults</p>
+              </div>
+              <div className="text-center mb-2 mb-md-0">
+                <p className="mb-1 text-muted small">Booking ID</p>
+                <p className="mb-0">STY12345</p>
+              </div>
+              <div className="d-flex align-items-center">
+                <button className="btn btn-primary me-2">Download Booking</button>
+                <button className="btn btn-outline-secondary">
+                  <BiChevronRight />
+                </button>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 
   const renderPaymentMethodsTab = () => (
     <div className="mt-4">
       <h2 className="fw-bold fs-4 mb-4">Payment methods</h2>
-      <p></p>
+      <p>No payment methods added yet.</p>
     </div>
   );
 
   return (
     <div className="container-fluid px-0">
       <div className="mx-auto" style={{ maxWidth: '900px' }}>
-        {/* Cover Image and Profile Section */}
+        {/* Cover and Profile */}
         <div className="position-relative">
           <div style={{ height: '260px', overflow: 'hidden' }}>
             <img 
@@ -77,7 +168,6 @@ const Profile = ({ user }) => {
               <FaUpload className="me-1" /> Upload new cover
             </button>
           </div>
-          
           <div className="d-flex flex-column align-items-center">
             <div className="position-relative" style={{ marginTop: '-48px' }}>
               <img 
@@ -93,8 +183,8 @@ const Profile = ({ user }) => {
             </div>
           </div>
         </div>
-        
-        {/* Tabs - Distributed equally across width */}
+
+        {/* Tabs */}
         <div className="d-flex mt-4 border-bottom">
           {[
             { id: 'account', label: 'Account' },
@@ -118,7 +208,7 @@ const Profile = ({ user }) => {
             </button>
           ))}
         </div>
-        
+
         {/* Tab Content */}
         <div className="px-3 mb-4">
           {activeTab === 'account' && renderAccountTab()}

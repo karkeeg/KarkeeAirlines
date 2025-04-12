@@ -24,11 +24,10 @@
   font-weight: bold;
   transform: translateY(2px);
 }
-.topic{
+.topic {
   font-family: "Marcellus", serif;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .fade-in {
@@ -81,7 +80,7 @@
 }
 /* 🔥 Profile Image Styling */
 .profile-img {
-  width: 40px;  /* Adjust size */
+  width: 40px; /* Adjust size */
   height: 40px; /* Ensures it's always proportional */
   object-fit: cover; /* Ensures the image is cropped properly */
   border-radius: 50%; /* Keeps it circular */
@@ -99,7 +98,6 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-
 .dropdown-item {
   display: flex;
   align-items: center; /* Align icon and text */
@@ -112,4 +110,12 @@
   background-color: #f8f9fa; /* Light hover effect */
 }
 
-           
+/* Add this CSS to your stylesheet */
+.story-card {
+  cursor:pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.story-card:hover {
+  opacity: 0.7;
+}
