@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const FlightResults = () => {
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState("flights"); // 'flights' or 'stays'
+  const [activeTab, setActiveTab] = useState("flights"); // flights or stays
 
   useEffect(() => {
     if (location.state && location.state.hotel) {
@@ -19,7 +19,6 @@ const FlightResults = () => {
     <div className="container-fluid">
       <Header />
 
-      {/* Tabs */}
       <div className="container mt-4">
         <ul className="nav nav-tabs">
           <li className="nav-item">
@@ -41,7 +40,6 @@ const FlightResults = () => {
         </ul>
       </div>
 
-      {/* Content */}
       <div>{activeTab === "flights" ? <FlightSearch /> : <StaySearch />}</div>
 
       <Footer />

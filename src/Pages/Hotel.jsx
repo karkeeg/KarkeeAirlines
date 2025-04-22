@@ -9,7 +9,7 @@ const HotelCard = ({ hotel }) => {
   const navigate = useNavigate();
 
   const handleBookNow = () => {
-    // Navigate to StaySearch page with hotel info as state or query params
+    // Navigate to StaySearch page with hotel data
     navigate("/flights", {
       state: { hotel },
     });
@@ -36,7 +36,6 @@ const HotelCard = ({ hotel }) => {
             </span>
           </div>
 
-          {/* Actions */}
           <div className="d-flex align-items-center gap-2 flex-wrap mt-auto">
             <button className="btn btn-outline-secondary p-2">
               <IoInformationCircleSharp size={18} />
@@ -66,9 +65,15 @@ const Hotel = () => {
     <div className="container py-4">
       <h2 className="mb-4 text-center fw-bold">Book Your Hotel</h2>
       <div className="row">
-        {hotels.map((hotel, index) => (
-          <HotelCard key={index} hotel={hotel} />
-        ))}
+        {/* Loop through the hotels data and create a card for each hotel */}
+        {hotels.map(
+          (
+            hotel,
+            index //card data from json file
+          ) => (
+            <HotelCard key={index} hotel={hotel} />
+          )
+        )}
       </div>
     </div>
   );

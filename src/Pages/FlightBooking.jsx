@@ -11,51 +11,58 @@ const FlightBooking = () => {
         {flightsData && flightsData.length > 0 ? (
           flightsData.map((flight, index) => (
             <div key={index} className="col-md-3 position-relative p-4">
-              {/* Image */}
               <div className="position-relative bg-white rounded-xl overflow-hidden shadow-lg">
                 <img
                   src={flight.image}
                   alt={flight.city}
                   className="img-fluid w-full object-cover rounded-xl"
                   style={{
-                    height: "300px", // Fixed height for consistency
+                    height: "300px",
                     width: "100%",
                     objectFit: "cover",
-                    borderRadius:"8px"
+                    borderRadius: "8px",
                   }}
                 />
 
-                {/* Content (Text) */}
                 <div
                   className="position-absolute bottom-0 start-0 p-2 "
                   style={{
                     // background:"black",
-                      color: "white",
+                    color: "white",
                     borderBottomLeftRadius: "8px",
                     borderBottomRightRadius: "8px",
-                    width:"100%"
+                    width: "100%",
                   }}
                 >
-                  <h3 className="font-bold " style={{fontSize:"24px"}}>{flight.city}</h3>
+                  <h3 className="font-bold " style={{ fontSize: "24px" }}>
+                    {flight.city}
+                  </h3>
                   <div className="d-flex  justify-content-between">
-                    <p className=" " style={{fontSize:"14px"}}>{flight.description}</p>
-                    <p className=" font-bold text-warning" style={{fontSize:"18px",fontWeight:"bold",}}>${flight.price}</p>
+                    <p className=" " style={{ fontSize: "14px" }}>
+                      {flight.description}
+                    </p>
+                    <p
+                      className=" font-bold text-warning"
+                      style={{ fontSize: "18px", fontWeight: "bold" }}
+                    >
+                      ${flight.price}
+                    </p>
                   </div>
 
                   {/* Button */}
-                  <Link to={'/flights'} >
-                  <button
-                    className="py-2"
-                    style={{
-                      background: "#66ABC7",
-                      border: "none",
-                      width: "100%",
-                      borderRadius:"5px"
-                    }}
+                  <Link to={"/flights"}>
+                    <button
+                      className="py-2"
+                      style={{
+                        background: "#66ABC7",
+                        border: "none",
+                        width: "100%",
+                        borderRadius: "5px",
+                      }}
                     >
-                    Book Flight
-                  </button>
-                    </Link>
+                      Book Flight
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
